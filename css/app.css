@@ -1,0 +1,11 @@
+html , body{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+ font-size:12px;
+}
+*{
+    box-sizing: border-box;
+}
