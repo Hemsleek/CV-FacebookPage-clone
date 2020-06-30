@@ -5,7 +5,151 @@ html , body{
 }
 :root{
  font-size:12px;
+ font-family: helvetica ,Arial , sans-serif;
 }
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: #F0F2F5;
+}
+
+
+/* HELPER STYLES START 
+======================
+*/
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex.align-start{
+    align-items: flex-start;
+}
+.flex.justify-start{
+    justify-content: flex-start;
+}
+.flex.align-center{
+    align-items: center;
+}
+.flex.justify-between{
+    justify-content: space-between;
+}
+.flex.justify-evenly{
+    justify-content: space-evenly;
+}
+.flex.justify-center{
+    justify-content: center;
+}
+.flex.justify-around{
+    justify-content: space-around;
+}
+
+
+/* HELPER STYLES END 
+======================
+*/
+
+.nav-bar{
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 64px;
+    background-color:#fff ;
+    z-index: 2;
+}
+
+.logo-search .brand-logo{
+    margin-right:.6rem;
+}
+
+.logo-search .search{
+    width:242px;
+    border-radius: 4rem;
+    background-color: #F0F2F5;
+    padding:3.5% 2%;
+    
+    
+}
+/* .logo-search .search-icon{
+
+} */
+.logo-search .nav-search{
+    border: none;
+    outline: none;
+    background-color: #F0F2F5;
+    color: #050505;
+    height: 100%;
+    padding:0 .4rem;
+    font-weight: 400;
+    font-size:1.28rem ;
+
+}
+.logo-search .search:focus .search-icon{
+    display: none;
+}
+
+.navigations{
+    flex-grow: .2;
+
+}
+.navigations a{
+    padding: .8rem 3.5rem;
+    /* height: 52px; */
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 52px; */
+}
+.navigations a:hover:not(:first-child){
+    background-color:
+    #e4e6eb ;
+}
+.navigations a:active:not(:first-child){
+    height: 100%;
+    background-color: #fff;
+    border-bottom: 3px  #1877F2 solid;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    
+}
+.navigations a:first-child{
+    height: 100%;
+    border-radius: none;
+    border-bottom: 5px  #1877F2 solid;
+    
+}
+.user-options div{
+    margin-left:.8rem;
+    border-radius:50%;
+}
+.user-options .name-profile{
+    border-radius: 4rem;
+    padding: .15rem .25rem;
+}
+.user-options .name-profile:hover{
+    background-color:#e4e6eb ;
+    
+}
+.user-options .picture{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right:.2rem;
+
+}
+.user-options .name{
+    font-size:1.25rem ;
+    font-weight: 600;
+    padding-right: .8rem;
+
+}
+
