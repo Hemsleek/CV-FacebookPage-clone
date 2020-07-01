@@ -4,7 +4,7 @@ html , body{
 
 }
 :root{
- font-size:12px;
+ font-size:15px;
  font-family: helvetica ,Arial , sans-serif;
 }
 *{
@@ -55,6 +55,13 @@ body{
 ======================
 */
 
+
+/*
+NAV STYLES START
+==============  
+*/
+
+
 .nav-bar{
     padding: 0 1%;
     display: flex;
@@ -63,26 +70,25 @@ body{
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 64px;
+    height: 62px;
     background-color:#fff ;
     z-index: 2;
+    cursor: pointer;
 }
 
 .logo-search .brand-logo{
-    margin-right:.6rem;
+    margin-right:.5rem;
+    cursor: pointer;
 }
 
 .logo-search .search{
-    width:242px;
+    width:235px;
     border-radius: 4rem;
     background-color: #F0F2F5;
-    padding:3.5% 2%;
+    padding:3.6% 2.6%;
     
     
 }
-/* .logo-search .search-icon{
-
-} */
 .logo-search .nav-search{
     border: none;
     outline: none;
@@ -91,70 +97,71 @@ body{
     height: 100%;
     padding:0 .4rem;
     font-weight: 400;
-    font-size:1.28rem ;
+    font-size:1rem ;
+    width: 200px;
+    
 
 }
 .logo-search .search:focus .search-icon{
     display: none;
 }
 
-.navigations{
-    flex-grow: .2;
 
-}
+
 .navigations a{
-    padding: .8rem 3.5rem;
-    /* height: 52px; */
+    padding: .8rem 3rem;
     border-radius: 5px;
     cursor: pointer;
-    /* width: 52px; */
 }
 .navigations a:hover:not(:first-child){
     background-color:
     #e4e6eb ;
 }
-.navigations a:active:not(:first-child){
-    height: 100%;
-    background-color: #fff;
-    border-bottom: 3px  #1877F2 solid;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: none;
-    
-}
+
 .navigations a:first-child{
     height: 100%;
-    border-radius: none;
-    border-bottom: 5px  #1877F2 solid;
+    border-radius: 0;
+    border-bottom: 2.5px  #1877F2 solid;
+    height:100%;
     
 }
 .user-options div{
-    margin-left:.8rem;
+
     border-radius:50%;
+    cursor: pointer;
+    
 }
+
 .user-options div:not(:first-child){
     border-radius: 50%;
-    padding: .8rem;
+    padding: .6rem;
     background-color:#e4e6eb ;
     display: flex;
     align-items: center;
+    margin-right:.5rem;
 }
+.user-options div:last-child{
+    margin-right: 1.5rem;
+}
+
 .user-options .name-profile{
     border-radius: 4rem;
     padding: .15rem .25rem;
+    margin-right: .3rem;
 }
-.user-options .name-profile:hover{
-    background-color:#e4e6eb ;
+.user-options div:hover{
+    background-color:#f4f4f5 ;
     
 }
 .user-options .picture{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    margin-right:.2rem;
+    margin-right:.3rem;
 
 }
 .user-options .name{
-    font-size:1.25rem ;
+    font-size:1rem ;
     font-weight: 600;
     padding-right: .8rem;
 
@@ -164,4 +171,66 @@ body{
     height: 20px;
 }
 
+/*
+NAV STYLES END
+==============  
+*/
 
+
+/*
+ MAIN CONTENT STYLES START 
+=========================
+*/
+
+.container{
+    margin-top: 78px;
+}
+sidebar{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sidebar-left{
+    padding: 0 1%;
+    height: 100vh;
+    
+
+}
+.sidebar-left a{
+    text-decoration: none;
+    color: #0D0D0E;
+    
+}
+.sidebar-left span{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.section{
+    display: flex;
+    align-items: center;
+
+}
+.section img{
+    width: 36px;
+    height: 36px;
+}
+.section:first-child img{
+    border-radius: 50%;
+}
+.section img[class="more"]{
+    width: 20px;
+    height: 20px;
+}
+.section:hover{
+    overflow-y: auto;
+    
+}
+
+
+/*
+ MAIN CONTENT STYLES END 
+===================
+*/
