@@ -215,10 +215,11 @@ sidebar{
 
 }
 
-.sidebar-left .section:not(:last-of-type) img{
+.sidebar-left .section:not(:nth-child(10)) img{
     width: 30px;
     height: 30px;
     margin-right: .4rem;
+    
 }
 .section:first-child img{
     border-radius: 50%;
@@ -239,11 +240,18 @@ sidebar{
 .seemore-container{
     border-radius: 50%;
     padding: .4rem;
-    /* background-color: #E4E6EB; */
-    background-color: red;
+    background-color: #E4E6EB;
+    margin-right: .4rem;
+    
     box-sizing: content-box;
 }
+.sidebar-left .relationship img{
 
+    width: 30px;
+    height: 30px;
+    margin-right: .4rem;
+    border-radius: 2px;
+}
 
 
 /*
