@@ -313,7 +313,7 @@ sidebar:hover{
     color: #4B4F56;
     padding: .6rem 0 1.2rem;
 }
-.sidebar1-footer a{
+.sidebar1-footer a:not(:nth-of-type(4)){
     margin:0 .2rem .1rem 0;
     font-size:.867rem;
     font-weight:400 ;
@@ -321,9 +321,12 @@ sidebar:hover{
     
     
 }
+.sidebar1-footer a:nth-of-type(4){
+    margin-right:.2rem;
+}
 .sidebar1-footer .dot{
-    align-self: flex-end;
-    margin-right: .2rem;
+    
+    margin: 0 .2rem .6rem 0;
 } 
 .sidebar1-footer .exempt{
     font-size:.867rem;
@@ -335,6 +338,7 @@ sidebar:hover{
     text-decoration: underline;
 
 }
+
 .main-content{
     grid-area: main-content;
     margin: 0 auto;
