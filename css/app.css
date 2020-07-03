@@ -63,14 +63,14 @@ NAV STYLES START
 
 
 .nav-bar{
-    padding: 0 1%;
+    padding: 0 .9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 9vh;
+    height: 9.5vh;
     background-color:#fff ;
     z-index: 2;
     cursor: pointer;
@@ -136,14 +136,14 @@ NAV STYLES START
 
 .user-options div:not(:first-child){
     border-radius: 50%;
-    padding: .6rem;
+    padding: .65rem;
     background-color:#e4e6eb ;
     display: flex;
     align-items: center;
     margin-right:.5rem;
 }
 .user-options div:last-child{
-    margin-right: 1.5rem;
+    margin-right: 1.2rem;
 }
 
 .user-options .name-profile{
@@ -187,9 +187,9 @@ NAV STYLES END
 .container{
     display: grid;
     grid-template-areas: "sidebar-left main-content sidebar-right";
-    grid-template-columns:24% 50% 21%;
+    grid-template-columns:24% 50% 22%;
     margin-top: 60px;
-    height: 91vh;
+    height: 90.5vh;
 
     
 }
@@ -197,8 +197,8 @@ sidebar{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 91vh;
+    justify-content: space-between; 
+    height: 90.5vh;
     margin-right: 2rem;
 }
 
@@ -212,6 +212,7 @@ sidebar:hover{
     left: 0; 
     padding: 0 1%; 
     grid-area: sidebar-left;
+    
     
 
 }
@@ -227,17 +228,18 @@ sidebar:hover{
 }
 .section{
     display: flex;
+    padding: .5rem 0;
     align-items: center;
 
 }
 .section:first-child{
-    margin-top:2rem;
+    margin-top:1rem;
 }
 
 .sidebar-left .section:not(:nth-child(10)) img{
-    width: 30px;
-    height: 30px;
-    margin-right: .4rem;
+    width: 29px;
+    height: 29px;
+    margin-right: .7rem;
     
 }
 .section:first-child img{
@@ -247,11 +249,35 @@ sidebar:hover{
     width: 20px;
     height: 20px;
 }
+.section:hover , .relationship:hover , .shortcuts > a:hover{
+    background-color:#E4E6EB;
+    border-radius: 5px;
+}
  
 .shortcuts{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-top: 1px #CED0D4 solid;
+    padding: 1.2rem 0 .4rem;
+    margin:.3rem 0;
+}
+.shortcuts span{
+    font-weight: 600;
+    font-size:1.133rem ;
+    color: #626974;
+
+}
+.shortcuts .link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1rem ;
+    color: #0084ff;
+    display: none;
+    
+}
+.shortcuts:hover .shortcuts .link{
+    display: contents;
 }
 
 .seemore-container{
@@ -260,18 +286,55 @@ sidebar:hover{
     background-color: #E4E6EB;
     margin-right: .4rem;
     
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
+}
+.section:nth-child(10){
+    margin-bottom: .3rem;
+}
+
+.sidebar-left .relationship{
+    padding: .5rem 0;
+    margin-bottom: .3rem;
+
+}
+.sidebar-left .relationship span{
+    font-size: 1rem;
+    font-weight: 500;
+   
 }
 .sidebar-left .relationship img{
 
     width: 30px;
     height: 30px;
-    margin-right: .4rem;
-    border-radius: 2px;
+    margin-right: .7rem;
+    border-radius: 5px;
+}
+.sidebar1-footer{ 
+    color: #4B4F56;
+    padding: .6rem 0 1.2rem;
+}
+.sidebar1-footer a{
+    margin:0 .2rem .1rem 0;
+    font-size:.867rem;
+    font-weight:400 ;
+    color: #4B4F56;
+    
+    
+}
+.sidebar1-footer .dot{
+    align-self: flex-end;
+    margin-right: .2rem;
+} 
+.sidebar1-footer .exempt{
+    font-size:.867rem;
+    font-weight:400 ;
+    color: #4B4F56;
 }
 
+.sidebar1-footer a:hover {
+    text-decoration: underline;
 
-
+}
 .main-content{
     grid-area: main-content;
     margin: 0 auto;
@@ -285,7 +348,7 @@ sidebar:hover{
     grid-area: sidebar-right;
     position: fixed;
     right: 0;
-    width: 21%;
+    width: 22%;
 }
 
 /*
