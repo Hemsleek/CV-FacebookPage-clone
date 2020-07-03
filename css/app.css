@@ -70,10 +70,12 @@ NAV STYLES START
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 62px;
+    height: 9vh;
     background-color:#fff ;
     z-index: 2;
     cursor: pointer;
+    
+    
 }
 
 .logo-search .brand-logo{
@@ -183,23 +185,37 @@ NAV STYLES END
 */
 
 .container{
-    margin-top: 78px;
+    display: grid;
+    grid-template-areas: "sidebar-left main-content sidebar-right";
+    grid-template-columns:24% 50% 21%;
+    margin-top: 60px;
+    height: 91vh;
+
+    
 }
 sidebar{
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    height: 91vh;
+    margin-right: 2rem;
 }
+
+sidebar:hover{
+    overflow-y: auto;   
+}  
 
 .sidebar-left{
-    padding: 0 1%;
-    height: 100vh;
-    /* box-sizing: content-box; */
+    width: 24%;
+    position: fixed;
+    left: 0; 
+    padding: 0 1%; 
+    grid-area: sidebar-left;
     
 
 }
+
 .sidebar-left a{
     text-decoration: none;
     color: #0D0D0E;
@@ -213,6 +229,9 @@ sidebar{
     display: flex;
     align-items: center;
 
+}
+.section:first-child{
+    margin-top:2rem;
 }
 
 .sidebar-left .section:not(:nth-child(10)) img{
@@ -228,9 +247,7 @@ sidebar{
     width: 20px;
     height: 20px;
 }
-.section:hover{
-    overflow-y: auto;   
-}
+ 
 .shortcuts{
     display: flex;
     align-items: center;
@@ -253,6 +270,23 @@ sidebar{
     border-radius: 2px;
 }
 
+
+
+.main-content{
+    grid-area: main-content;
+    margin: 0 auto;
+    width:88%;
+    
+
+}
+
+
+.sidebar-right{
+    grid-area: sidebar-right;
+    position: fixed;
+    right: 0;
+    width: 21%;
+}
 
 /*
  MAIN CONTENT STYLES END 
