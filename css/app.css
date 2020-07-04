@@ -313,6 +313,10 @@ sidebar:hover{
 .sidebar1-footer{ 
     color: #4B4F56;
     padding: .6rem 0 1.2rem;
+    /* position: fixed;
+    bottom:0;
+    width:24%;
+    background-color: #F0F2F5; */
 }
 .sidebar1-footer a:not(:nth-of-type(4)){
     margin:0 .2rem .1rem 0;
@@ -355,6 +359,8 @@ sidebar:hover{
     right: 0;
     width: 22%;
     box-sizing: content-box;
+    
+
 }
 
 .sidebar-right > div{
@@ -364,6 +370,10 @@ sidebar:hover{
     font-weight:600 ;
     font-size:1.133rem ;
     color:#626974 ;
+    margin-bottom: .6rem;
+}
+.sponsored-container {
+    padding-bottom:1rem;
 }
 .sponsored-container a{
     text-decoration: none;
@@ -373,13 +383,15 @@ sidebar:hover{
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 2rem;
+    padding:.53rem 0 ;
 
 }
 .sponsored img{
-    width:40%;
+    
+    width:43%;
     height: 100%;
-    margin-right:.8rem;
+    margin-right:.6rem;
+    border-radius: 5px;
     
 }
 
@@ -388,13 +400,41 @@ sidebar:hover{
     flex-direction: column;
 
 }
+.sponsored .name span:first-child{
+    font-size: 1rem;
+    font-weight: 500;
+    color:#050505 ;
+    margin-bottom:.25rem;
+
+}
+.sponsored .name span:last-child{
+   font-size:.86rem ;
+    font-weight:400 ;
+    color:#65676b ; 
+}
+.birthday{
+    margin-bottom: .8rem;
+}
 .birthday img{
     margin-right: .6rem;
 }
+.birthday :not(.bold){
+    font-size: 1rem;
+    font-weight:400 ;
+    color: #282828;
+}
+.birthday .bold{
+    color: #050505;
+    font-size: 1rem;
+    font-weight:bolder;
+
+}
+
 
 .contacts .contact{
     display: flex;
     align-items: center;
+    margin-bottom: .8rem;
 }
 .contacts .contact img{
     margin-right: .6rem;
@@ -403,10 +443,13 @@ sidebar:hover{
     border-radius: 50%;
 
 }
+.search-more img{
+    margin-left: .6rem;
+}
 .group-conversations .group{
     display: flex;
     align-items: center;
-
+    margin-bottom: .8rem;
 }
 .group-conversations .group img{
     margin-right: .6rem;
