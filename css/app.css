@@ -353,7 +353,57 @@ sidebar:hover{
     position: fixed;
     right: 0;
     width: 22%;
+    box-sizing: content-box;
 }
+.sidebar-right > div{
+    border-bottom:1px #CED0D4 solid;
+}
+.sponsored{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.sponsored .sponsor-img{
+    width:40%;
+    /* height: 100%; */
+    margin-right:.4rem;
+    
+}
+
+.sponsored .name{
+    display: flex;
+    flex-direction: column;
+
+}
+.birthdays{
+
+}
+
+.contacts .contact{
+    display: flex;
+    align-items: center;
+}
+.contacts .contact img{
+    margin-right: .4rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+}
+.group-conversations .group{
+    display: flex;
+    align-items: center;
+
+}
+.group-conversations .group img{
+    margin-right: .4rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+}p
+
 
 
 /*
