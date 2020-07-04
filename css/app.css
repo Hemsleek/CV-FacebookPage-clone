@@ -203,8 +203,9 @@ sidebar{
 }
 
 sidebar:hover{
-    overflow-y: auto;   
-}  
+    overflow-y: auto; 
+ 
+}
 
 .sidebar-left{
     width: 24%;
@@ -355,19 +356,30 @@ sidebar:hover{
     width: 22%;
     box-sizing: content-box;
 }
+
 .sidebar-right > div{
     border-bottom:1px #CED0D4 solid;
+}
+.heading{
+    font-weight:600 ;
+    font-size:1.133rem ;
+    color:#626974 ;
+}
+.sponsored-container a{
+    text-decoration: none;
+    
 }
 .sponsored{
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 2rem;
 
 }
-.sponsored .sponsor-img{
+.sponsored img{
     width:40%;
-    /* height: 100%; */
-    margin-right:.4rem;
+    height: 100%;
+    margin-right:.8rem;
     
 }
 
@@ -376,8 +388,8 @@ sidebar:hover{
     flex-direction: column;
 
 }
-.birthdays{
-
+.birthday img{
+    margin-right: .6rem;
 }
 
 .contacts .contact{
@@ -385,7 +397,7 @@ sidebar:hover{
     align-items: center;
 }
 .contacts .contact img{
-    margin-right: .4rem;
+    margin-right: .6rem;
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -397,12 +409,12 @@ sidebar:hover{
 
 }
 .group-conversations .group img{
-    margin-right: .4rem;
+    margin-right: .6rem;
     width: 36px;
     height: 36px;
     border-radius: 50%;
 
-}p
+}
 
 
 
