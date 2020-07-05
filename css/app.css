@@ -7,6 +7,16 @@ html , body{
  font-size:15px;
  font-family: helvetica ,Arial , sans-serif;
 }
+/* ::-webkit-scrollbar, html::-webkit-scrollbar {
+    width: 4px;
+}
+::scrollbar-thumb element 
+(index):5::-webkit-scrollbar-thumb ,html::-webkit-scrollbar-thumb {
+    background: #00d5a6;
+}
+ ::scrollbar-track element(index):5::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
+    background: #f1f1f1;
+} */
 *{
     box-sizing: border-box;
 }
@@ -277,8 +287,8 @@ sidebar:hover{
     display: none;
     
 }
-.shortcuts:hover .shortcuts .link{
-    display: contents;
+.shortcuts:hover  .link{
+    display: block;
 }
 
 .seemore-container{
@@ -348,19 +358,78 @@ sidebar:hover{
     grid-area: main-content;
     margin: 0 auto;
     width:88%;
-    
 
 }
 
+.moment-thought{
+    background-color: #FFFFFF;
+    /* padding:0 1rem; */
+    width: 86%;
+    /* height: 40px; */
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #65676B;
+    
+}
+.moment-thought img{
+    width: 24px;
+    height: 24px;
+    margin-right: .55rem;
+    
+}
+
+.moment-thought .my-post{
+    padding: 1rem 0;
+    margin:0 1rem;
+    border-bottom: 1px #CED0D4 solid  ;
+    
+} 
+.moment-thought .activities{
+    padding: 1.3rem 2rem;
+}
+.my-post img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+.my-post .post-input{
+ width:100%;
+ text-align: start;
+ border-radius: 30px;
+ padding: 1rem .7rem;
+ border: none;
+ font-size: 1.133rem;
+ font-weight: 400;
+ color: #65676B;
+ background-color: #F0F2F5;
+ cursor: pointer;
+
+}
+.my-post .post-input:hover{
+    background-color:#E4E6EB ;
+}
+.activities .activity{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem .7rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.activities .activity:hover{
+    background-color:#E4E6EB ;
+}
 
 .sidebar-right{
     grid-area: sidebar-right;
     position: fixed;
     right: 0;
     width: 22%;
-    box-sizing: content-box;
-    
-
+    padding:0 2%;
+     
 }
 
 .sidebar-right > div{
@@ -370,7 +439,7 @@ sidebar:hover{
     font-weight:600 ;
     font-size:1.133rem ;
     color:#626974 ;
-    margin-bottom: .6rem;
+    margin-bottom: .8rem;
 }
 .sponsored-container {
     padding-bottom:1rem;
@@ -384,7 +453,11 @@ sidebar:hover{
     align-items: center;
     cursor: pointer;
     padding:.53rem 0 ;
+    margin-bottom: 1rem;
 
+}
+.sponsored-container .sponsored:last-of-type{
+    margin-bottom:.6rem;
 }
 .sponsored img{
     
@@ -392,6 +465,7 @@ sidebar:hover{
     height: 100%;
     margin-right:.6rem;
     border-radius: 5px;
+    
     
 }
 
@@ -438,13 +512,17 @@ sidebar:hover{
 }
 .contacts .contact img{
     margin-right: .6rem;
-    width: 36px;
-    height: 36px;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
+
 
 }
 .search-more img{
     margin-left: .6rem;
+    color:#626974 ;
+
+
 }
 .group-conversations .group{
     display: flex;
@@ -453,8 +531,8 @@ sidebar:hover{
 }
 .group-conversations .group img{
     margin-right: .6rem;
-    width: 36px;
-    height: 36px;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
 
 }
