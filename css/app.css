@@ -363,9 +363,7 @@ sidebar:hover{
 
 .moment-thought{
     background-color: #FFFFFF;
-    /* padding:0 1rem; */
     width: 86%;
-    /* height: 40px; */
     border-radius: 10px;
     margin-top: 2rem;
     color: #65676B;
@@ -398,7 +396,7 @@ sidebar:hover{
  width:100%;
  text-align: start;
  border-radius: 30px;
- padding: 1rem .7rem;
+ padding: .5rem .7rem;
  border: none;
  font-size: 1.133rem;
  font-weight: 400;
@@ -428,7 +426,7 @@ sidebar:hover{
     position: fixed;
     right: 0;
     width: 22%;
-    padding:0 2%;
+    
      
 }
 
@@ -440,25 +438,23 @@ sidebar:hover{
     font-size:1.133rem ;
     color:#626974 ;
     margin-bottom: .8rem;
+    padding-left:1rem;
 }
-.sponsored-container {
-    padding-bottom:1rem;
-}
+
 .sponsored-container a{
     text-decoration: none;
     
 }
 .sponsored{
+    padding:.6rem 1rem;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding:.53rem 0 ;
     margin-bottom: 1rem;
 
 }
-.sponsored-container .sponsored:last-of-type{
-    margin-bottom:.6rem;
-}
+
 .sponsored img{
     
     width:43%;
@@ -486,7 +482,10 @@ sidebar:hover{
     font-weight:400 ;
     color:#65676b ; 
 }
+
 .birthday{
+    padding:.6rem 1rem;
+    border-radius: 10px;
     margin-bottom: .8rem;
 }
 .birthday img{
@@ -509,6 +508,8 @@ sidebar:hover{
     display: flex;
     align-items: center;
     margin-bottom: .8rem;
+    padding:.6rem 1rem;
+    border-radius: 10px;
 }
 .contacts .contact img{
     margin-right: .6rem;
@@ -528,6 +529,8 @@ sidebar:hover{
     display: flex;
     align-items: center;
     margin-bottom: .8rem;
+    padding:.6rem 1rem;
+    border-radius: 10px;
 }
 .group-conversations .group img{
     margin-right: .6rem;
@@ -536,7 +539,9 @@ sidebar:hover{
     border-radius: 50%;
 
 }
-
+.sponsored-container a:hover , .birthdays > .birthday:hover , .contacts >div:hover:not(:first-child) , .group-conversations > .group:hover {
+    background-color:#E4E6EB ;
+}
 
 
 /*
