@@ -178,9 +178,31 @@ NAV STYLES START
     padding-right: .8rem;
 
 }
-.user-options .add , .user-options .arrow-down{
+.user-options .add ,
+.user-options .arrow-down{
     width: 20px;
     height: 20px;
+}
+.user-options .messages , .user-options .notify{
+    position: relative;
+}
+.user-options .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: "";
+    background-color: #F02849;
+    color: #fff;
+    right: -.5rem;
+    top: 0;
+    border-radius: 50%;
+    width: 1.1rem;
+    height: 1.1rem;
+    padding: .2rem;
+
+
+
 }
 
 /*
@@ -260,7 +282,10 @@ sidebar:hover{
     width: 20px;
     height: 20px;
 }
-.section:hover , .relationship:hover , .shortcuts > a:hover{
+.section:hover , 
+.relationship:hover ,
+.shortcuts > a:hover {
+
     background-color:#E4E6EB;
     border-radius: 5px;
 }
@@ -354,23 +379,175 @@ sidebar:hover{
 
 }
 
+
 .main-content{
     grid-area: main-content;
     margin: 0 auto;
-    width:88%;
+    width:88% ;
 
 }
+.main-content .status{
+    margin-top: 1rem;
+    padding: .533rem 0 1.6rem;
+    cursor: pointer;
+    
+
+}
+.status .create-story , 
+.status .friends-status{
+ width: 23%;
+ height: 216px;
+ border-radius: 15px;
+
+ margin-right: .5rem;
+ background-color: #fff;
+}
+.status .create-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.create-story .img-container{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+.create-story img{
+    /* width:100%; */
+    height:100%;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.create-plus{
+    position: absolute;
+    bottom:-1.5rem;
+    left:33%;
+    background-color: #1876F2;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 5px #fff solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.create-story > span{
+    padding-bottom: 1rem;
+    max-width: 50%;
+    text-align: center;
+    color: #040404;
+    font-size: 1rem;
+    font-weight:600 ;
+    
+}
+.create-plus span{
+    position: relative;
+    width:1.2rem ;
+    height:2px ;
+    background-color: #fff;
+
+}
+.create-plus span:before{
+    position: absolute;
+    content: "";
+    width:1.2rem ;
+    height: 2px;
+    background-color: #fff;
+    rotate: 90deg;
+
+}
+.status .friends-status {
+    position: relative;
+}
+.friends-status img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100%;
+    border-radius: 15px;
+}
+.friend-profile-pix{
+    position: absolute;
+    top:1.4rem;
+    left: .8rem;
+    width: 36px;
+    height: 36px;
+    border: 4px #1876F2 solid;
+    border-radius: 50%;
+
+}
+.friend-profile-pix img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.friends-status > span{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    max-width: 70%;
+    color: #fff;
+    font-size: .94rem;
+    font-weight: 600;
+    line-height: 1.34;
+
+}
+.friends-status:last-of-type .arrow{
+    position: absolute;
+    right: -1.75rem;
+    top:40%;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.6);
+
+
+}
+.arrow span{
+    position: relative;
+    width: 1rem;
+    height: 2px;
+    background: rgba(0, 0, 0, .5);
+
+}
+.arrow span:before ,
+.arrow span:after{
+
+    position: absolute;
+    content: "";
+    width: .7rem;
+    height: 2px;
+    background: rgba(0, 0, 0, .5);
+
+}
+.arrow span:before{
+    transform: rotate(-40deg) translateX(.26rem) translateY(.5rem);
+}
+.arrow span:after {
+    transform: rotate(40deg) translateX(.26rem) translateY(-0.5rem);
+}
+
 
 .moment-thought{
     background-color: #FFFFFF;
-    width: 86%;
-    border-radius: 10px;
-    margin-top: 2rem;
+    /* width: 80%; */
+    border-radius: 15px;
+    margin:0 auto 1.2rem;
     color: #65676B;
     
 }
 .moment-thought img{
-    width: 24px;
+    width: 24px; 
     height: 24px;
     margin-right: .55rem;
     
@@ -385,6 +562,7 @@ sidebar:hover{
 .moment-thought .activities{
     padding: 1.3rem 2rem;
 }
+
 .my-post img{
     border-radius: 50%;
     width: 40px;
@@ -510,15 +688,31 @@ sidebar:hover{
     margin-bottom: .8rem;
     padding:.6rem 1rem;
     border-radius: 10px;
+    position: relative;
 }
-.contacts .contact img{
-    margin-right: .6rem;
+.online-green{
     width: 29px;
     height: 29px;
+    position: relative;
+    margin-right: .6rem;
+} 
+.contact .online-green img{
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-
-
 }
+
+.online-green:after{
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    content:"";
+    background:green;
+}
+
 .search-more img{
     margin-left: .6rem;
     color:#626974 ;
@@ -532,14 +726,18 @@ sidebar:hover{
     padding:.6rem 1rem;
     border-radius: 10px;
 }
-.group-conversations .group img{
-    margin-right: .6rem;
-    width: 29px;
-    height: 29px;
+ .group .online-green img{
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 
 }
-.sponsored-container a:hover , .birthdays > .birthday:hover , .contacts >div:hover:not(:first-child) , .group-conversations > .group:hover {
+
+.sponsored-container a:hover , 
+.birthdays > .birthday:hover , 
+.contacts >div:hover:not(:first-child) ,
+ .group-conversations > .group:hover {
+
     background-color:#E4E6EB ;
 }
 
