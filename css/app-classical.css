@@ -8,3 +8,48 @@ html , body{
     box-sizing: border-box;
 
 }
+
+body{
+    
+}
+
+/* HELPER STYLES START 
+======================
+*/
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex.align-start{
+    align-items: flex-start;
+}
+.flex.justify-start{
+    justify-content: flex-start;
+}
+.flex.align-center{
+    align-items: center;
+}
+.flex.justify-between{
+    justify-content: space-between;
+}
+.flex.justify-evenly{
+    justify-content: space-evenly;
+}
+.flex.justify-center{
+    justify-content: center;
+}
+.flex.justify-around{
+    justify-content: space-around;
+}
+
+
+/* HELPER STYLES END 
+======================
+*/
+
