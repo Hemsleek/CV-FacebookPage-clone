@@ -11,10 +11,8 @@ html , body{
 
 body{
     display: grid;
-    grid-template-columns: 20vw 1fr 20vw 15vw;
-    grid-template-rows: 64px 1fr;
-    grid-template-areas: "navbar navbar navbar navbar"
-    "explore friends-post sponsored conversations"
+    grid-template: "navbar navbar navbar navbar" 42px
+    "explore friends-post sponsored conversations" 1fr / 20vw 1fr 20vw 15vw;
     ;
 }
 
@@ -57,4 +55,36 @@ body{
 /* HELPER STYLES END 
 ======================
 */
+.nav-bar{
+    grid-area: navbar;
+    width: 100vw;
+    background: #4267B2;
+    color: #fff;
+}
+.nav-bar a{
+    color: #fff;
+}
+.nav-bar .name-profile img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
 
+
+.explore{
+    grid-area: explore;
+}
+
+
+.friends-post{
+    grid-area: friends-post;
+}
+
+
+.sponsored-container{
+    grid-area: sponsored;
+}
+
+.conversations{
+    grid-area: conversations;
+}
