@@ -11,7 +11,7 @@ html , body{
 
 body{
     display: grid;
-    grid-template: "navbar navbar navbar . " 42px
+    grid-template: "navbar navbar navbar navbar " 42px
     "explore friends-post sponsored conversations" 1fr / 20vw 1fr 20vw 15vw;
     ;
     background: #E9EBEE;
@@ -138,5 +138,233 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+
+}
+
+
+
+.moment-thought{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin:0 auto 1.2rem;
+    color: #65676B;
+    width: 83%;
+    max-width: 83%;
+    
+}
+.moment-thought img{
+    width: 24px; 
+    height: 24px;
+    margin-right: .55rem;
+    
+}
+
+.moment-thought .my-post{
+    padding: 1rem 0;
+    margin:0 1rem;
+    border-bottom: 1px #CED0D4 solid  ;
+    
+} 
+.moment-thought .activities{
+    padding: 1.3rem 2rem;
+}
+
+.my-post img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+.my-post .post-input{
+ width:100%;
+ text-align: start;
+ border-radius: 30px;
+ padding: .5rem .7rem;
+ border: none;
+ font-size: 1.133rem;
+ font-weight: 400;
+ color: #65676B;
+ background-color: #F0F2F5;
+ cursor: pointer;
+
+}
+.my-post .post-input:hover{
+    background-color:#E4E6EB ;
+}
+.activities .activity{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem .7rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.activities .activity:hover{
+    background-color:#E4E6EB ;
+}
+.main-content .friends-post{
+    background: #fff;
+    border-radius: 15px;
+    margin:0 auto 1.2rem;
+    display:flex;
+    flex-direction: column;
+    width: 83%;
+    max-width: 83%;
+
+}
+.friends-post .title{
+    width: 100%;
+    padding: .8rem 1.2rem;
+    }
+
+.post-title .title-name .brand-logo{
+    border-radius: 50%;
+    border: 1px #CED0D4 solid;
+    cursor: pointer;
+  
+}
+
+
+.title-name .name .top-text span{
+    font-size: 1rem;
+    font-weight: 600;
+    padding:0 .5rem .3rem;
+
+}
+
+
+.title-name .name .below-text span{
+    font-size: .87rem;
+    font-weight: 400;
+    padding:0 .5rem;
+   color: #65676b;
+
+}
+.top-text span:hover ,
+.below-text span:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.friends-post .options{
+    cursor: pointer;
+}
+.friends-post .features{ 
+    padding: 0 1.2rem .8rem;
+    width: 96%;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+.friends-post .features .feature{
+   display: flex;
+   align-items: center;
+   padding: .1rem 0;
+
+}
+.friends-post .feature:first-of-type img{
+ align-self: flex-start;
+}
+.friends-post .post-image{
+    width:100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.friends-post .web-link{
+    padding: .8rem 1.2rem;
+    border-bottom: 1px  #CED0D4 solid;
+    background-color: #F0F2F5;
+}
+.friends-post .web-link a{
+    text-decoration:none;
+    cursor: pointer;
+}
+.friends-post .web-link > a{
+    font-weight:400 ;
+    font-size:.87rem ;
+    /* color:#65676b ; */
+    margin-bottom: .4rem;
+    color:#65676b ;
+
+}
+.friends-post .free-package > a{
+    
+    color: #050505;
+    font-weight:600 ;
+    font-size:1.133rem ;
+    width: 80%;
+
+}
+
+.web-link .signin{
+    cursor: pointer;
+    align-self: flex-start;
+    background-color: #E4E6EB;
+    border: none;
+    padding:.8rem 1rem ;
+    font-size:1rem;
+    font-weight: 600;
+    color: #050505;
+    border-radius: 6px;
+    /* margin-bottom:1.5rem; */
+}
+.web-link .signin:hover{
+    background-color: #C2C3C5;
+}
+
+.friends-post .reactions-count{
+    padding: .8rem 0;
+    color: #65676b;
+    margin:0 1.2rem;
+    border-bottom: 1px #CED0D4 solid ;
+}
+
+.reactions .smiley-count img{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.reactions .smiley-count img:last-of-type{
+    margin-right:.4rem;
+}
+.reactions .smiley-count span:hover{
+    text-decoration: underline;
+    
+}
+
+.reactions-count .comment-share span{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.reactions-count .comment-share span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.reactions-count .comment-share span:last-child{
+ margin-left: .4rem;
+}
+.reaction-buttons{
+    padding: .8rem 1.2rem;
+    color: #65676b;
+    
+}
+
+.reaction-buttons img{
+    margin-right: .4rem;
+}
+.reaction-buttons > div{
+    padding: .8rem 2rem;
+}
+.reaction-buttons .like:hover,
+.reaction-buttons .comment:hover,
+.reaction-buttons .share:hover{
+    border-radius: 10px;
+    background-color: #E4E6EB;
+    cursor: pointer;
 
 }
