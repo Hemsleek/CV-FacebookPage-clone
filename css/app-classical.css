@@ -11,9 +11,10 @@ html , body{
 
 body{
     display: grid;
-    grid-template: "navbar navbar navbar navbar" 42px
+    grid-template: "navbar navbar navbar . " 42px
     "explore friends-post sponsored conversations" 1fr / 20vw 1fr 20vw 15vw;
     ;
+    background: #E9EBEE;
 }
 
 /* HELPER STYLES START 
@@ -87,4 +88,55 @@ body{
 
 .conversations{
     grid-area: conversations;
+}
+
+.conversations .contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    padding:.6rem 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+.online-green{
+    width: 29px;
+    height: 29px;
+    position: relative;
+    margin-right: .6rem;
+} 
+.contact .online-green img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.online-green:after{
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    content:"";
+    background:green;
+}
+
+.search-more img{
+    margin-left: .6rem;
+    color:#626974 ;
+
+
+}
+.group-conversations .group{
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    padding:.6rem 1rem;
+    border-radius: 10px;
+}
+ .group .online-green img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
 }
