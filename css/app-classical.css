@@ -12,10 +12,11 @@ html , body{
 }
 
 body{
+    width: 100vw;
     display: grid;
-    grid-template: "navbar navbar navbar navbar " 7.5vh;
-    "explore friends-post sponsored conversations" 1fr / 20vw 1fr 20vw 16vw;
-    ;
+    grid-template: "navbar navbar navbar navbar" 7.5vh
+    "explore friends-post sponsored conversations" 1fr / 25% 36% 20% 16%;
+    
     background: #E9EBEE;
 }
 
@@ -63,6 +64,12 @@ body{
     width: 100vw;
     background: #4267B2;
     color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    height: 7.5vh;
+    
+
 }
 .nav-bar a{
     color: #fff;
@@ -78,19 +85,21 @@ body{
     grid-area: explore;
     position: fixed;
     left: 0;
-    height: 92.5vh;
-    width:20vw ;
+    /* height: 92.5vh; */
+    width:25%;
     margin-top: 7.5vh;
+    padding: 0 2rem;
 }
 
 
 .friends-post{
-    grid-area: friends-post;
+    
 }
 
 
 .sponsored-container{
-    grid-area: sponsored;
+    grid-area: sponsored ;
+    width: 80%;
 }
 
 .conversations{
@@ -100,10 +109,10 @@ body{
     line-height: 2.67rem;
     color: #333;
     position: fixed;
-    width: 16vw;
+    width: 16%;
     right: 0;
-    overflow-y: auto;
-    /* margin-top: 7.5vh; */
+    /* overflow-y: auto; */
+    margin-top: 7.5vh;
     height:92.5vh ;
 
 }
@@ -140,7 +149,7 @@ body{
     bottom: 0;
     right: 0;
     content:"";
-    background:green;
+    background:#42B72A;
 }
 
 .group-conversations .group{
@@ -199,8 +208,8 @@ body{
     border-radius: 10px;
     margin:0 auto 1.2rem;
     color: #65676B;
-    width: 83%;
-    max-width: 83%;
+    width: 50%;
+    max-width: 50%;
     
 }
 .moment-thought img{
@@ -255,17 +264,23 @@ body{
 .activities .activity:hover{
     background-color:#E4E6EB ;
 }
-.main-content .friends-post{
+.friends-post{
+    grid-area: friends-post;
     background: #fff;
     border-radius: 15px;
-    margin:0 auto 1.2rem;
+    /* margin:0 auto 1.2rem; */
     display:flex;
     flex-direction: column;
-    width: 83%;
-    max-width: 83%;
+    align-items: center;
+    /* width:80%; */
+    
+}
+.friend-post{
+    width: 50%; 
+     max-width: 50%;
 
 }
-.friends-post .title{
+.friend-post .title{
     width: 100%;
     padding: .8rem 1.2rem;
     }
