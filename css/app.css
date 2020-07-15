@@ -431,7 +431,7 @@ sidebar:hover{
 .create-plus{
     position: absolute;
     bottom:-1.5rem;
-    left:33%;
+    left:calc(50% - 1.5rem);
     background-color: #1876F2;
     width: 3rem;
     height: 3rem;
