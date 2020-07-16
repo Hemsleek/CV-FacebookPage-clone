@@ -151,8 +151,25 @@ body{
     width:20%;
     margin-top: 7.5vh;
     /* padding: 0 2rem; */
+    font-weight: 400;
+    font-size: 1.08rem;
 }
 
+.explore .feed a,
+.explore .explore-section a{
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: #1D2129; 
+   font-weight: 400;
+    font-size: 1.08rem;
+}
+
+.explore .feed,
+.explore .explore-section {
+    padding: 1.5rem 0;
+
+}
 
 .friends-post{
     
