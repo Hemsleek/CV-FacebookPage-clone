@@ -74,7 +74,7 @@ body{
 }
 .nav-bar .content{
     width:80%;
-    height: 100%;
+    height: auto;
     padding-left:2rem ;
 
 }
@@ -127,7 +127,22 @@ body{
     
 }
 
-.nav-bar .name-profile , .nav-bar 
+.nav-bar .name-profile , 
+.nav-bar .notifications > a,
+.notifications .border-div{
+    padding: .6rem 1rem;
+}
+.nav-bar .notifications > a:first-child,
+.notifications .border-div{
+    border-left: 1px #3B5DA0 solid;
+    border-right: 1px #3B5DA0 solid;
+}
+.nav-bar .name-profile:hover, 
+.nav-bar .notifications > a:hover{
+    border-radius: 5px;
+    background-color: #3B5DA0;
+}
+
 .explore{
     grid-area: explore;
     position: fixed;
@@ -479,5 +494,41 @@ cursor: pointer;
     border-radius: 10px;
     background-color: #E4E6EB;
     cursor: pointer;
+
+}
+
+
+
+.sidebar1-footer{ 
+    color: #4B4F56;
+    padding: .6rem 0 1.2rem;
+    /* position: fixed;
+    bottom:0;
+    width:24%;
+    background-color: #F0F2F5; */
+}
+.sidebar1-footer a:not(:nth-of-type(4)){
+    margin:0 .2rem .1rem 0;
+    font-size:.867rem;
+    font-weight:400 ;
+    color: #4B4F56;
+    
+    
+}
+.sidebar1-footer a:nth-of-type(4){
+    margin-right:.2rem;
+}
+.sidebar1-footer .dot{
+    
+    margin: 0 .2rem .6rem 0;
+} 
+.sidebar1-footer .exempt{
+    font-size:.867rem;
+    font-weight:400 ;
+    color: #4B4F56;
+}
+
+.sidebar1-footer a:hover {
+    text-decoration: underline;
 
 }
