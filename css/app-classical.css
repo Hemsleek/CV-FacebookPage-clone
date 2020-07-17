@@ -142,6 +142,35 @@ body{
     border-radius: 5px;
     background-color: #3B5DA0;
 }
+.notifications > a:nth-child(3){
+   padding: 0; 
+}
+
+.border-div .messages,
+.border-div .bell{
+    position: relative;   
+}
+
+.border-div .badges{
+    position: absolute;
+    top: 0;
+    right: -.3rem;
+    width: .8rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: .5rem;
+    background-color:red;
+    /* font-weight: 400; */
+    border-radius: 3px;
+
+}
+
+.border-div a{
+    margin:0 .6rem;
+}
 
 .explore{
     grid-area: explore;
@@ -170,10 +199,12 @@ body{
     padding: 1.5rem 0;
 
 }
-
-.friends-post{
-    
+.explore img{
+    width: 25px;
+    height: 25px;
 }
+
+
 
 
 .sponsored-container{
@@ -359,10 +390,7 @@ body{
      max-width: 100%; 
 
 }
-.friend-post .title{
-    /* width: 100%; */
-    /* padding: .8rem 1.2rem; */
-    }
+
 
 .post-title .title-name .brand-logo{
     border-radius: 50%;
