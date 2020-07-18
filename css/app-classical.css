@@ -136,14 +136,16 @@ body{
 .notifications .border-div{
     border-left: 1px #3B5DA0 solid;
     border-right: 1px #3B5DA0 solid;
+    
 }
 .nav-bar .name-profile:hover, 
 .nav-bar .notifications > a:hover{
     border-radius: 5px;
     background-color: #3B5DA0;
 }
-.notifications > a:nth-child(3){
+.notifications > a:nth-of-type(4){
    padding: 0; 
+
 }
 
 .border-div .messages,
@@ -210,6 +212,71 @@ body{
 .sponsored-container{
     grid-area: sponsored ;
     width: 100%;
+    margin-top: 2rem;
+}
+
+.sponsored-container div{
+    margin-bottom: 2rem;
+}
+.sponsored-container .birthdays-notify{
+    background: #fff;
+    padding: 2rem;
+    /* color: ; */
+    width:
+}
+.birthdays-notify img{
+    width: 27px;
+    height: 27px;
+    /* margin-right:.5rem; */
+}
+.birthdays-notify .birthday-person-name{}
+.birthdays-notify .and{}
+.birthdays-notify .others{}
+
+.sponsored-container .languages{
+    background-color: #fff;
+    padding: 1.5rem;
+
+}
+.languages .links a{
+    text-decoration: none;
+    margin-right:.6rem;
+}
+.languages .show-more{
+    align-self: flex-start;
+}
+.sidebar1-footer{ 
+    color: #4B4F56;
+    padding: .6rem 0 1.2rem;
+    /* position: fixed;
+    bottom:0;
+    width:24%;
+    background-color: #F0F2F5; */
+}
+.sidebar1-footer a:not(:nth-of-type(4)){
+    margin:0 .2rem .1rem 0;
+    font-size:.867rem;
+    font-weight:400 ;
+    color: #4B4F56;
+    
+    
+}
+.sidebar1-footer a:nth-of-type(4){
+    margin-right:.2rem;
+}
+.sidebar1-footer .dot{
+    
+    margin: 0 .2rem .6rem 0;
+} 
+.sidebar1-footer .exempt{
+    font-size:.867rem;
+    font-weight:400 ;
+    color: #4B4F56;
+}
+
+.sidebar1-footer a:hover {
+    text-decoration: underline;
+
 }
 
 .conversations{
@@ -544,36 +611,3 @@ cursor: pointer;
 
 
 
-.sidebar1-footer{ 
-    color: #4B4F56;
-    padding: .6rem 0 1.2rem;
-    /* position: fixed;
-    bottom:0;
-    width:24%;
-    background-color: #F0F2F5; */
-}
-.sidebar1-footer a:not(:nth-of-type(4)){
-    margin:0 .2rem .1rem 0;
-    font-size:.867rem;
-    font-weight:400 ;
-    color: #4B4F56;
-    
-    
-}
-.sidebar1-footer a:nth-of-type(4){
-    margin-right:.2rem;
-}
-.sidebar1-footer .dot{
-    
-    margin: 0 .2rem .6rem 0;
-} 
-.sidebar1-footer .exempt{
-    font-size:.867rem;
-    font-weight:400 ;
-    color: #4B4F56;
-}
-
-.sidebar1-footer a:hover {
-    text-decoration: underline;
-
-}
