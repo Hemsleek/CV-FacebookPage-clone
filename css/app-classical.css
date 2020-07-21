@@ -174,6 +174,7 @@ body{
     margin:0 .6rem;
 }
 
+
 .explore{
     grid-area: explore;
     position: fixed;
@@ -184,8 +185,17 @@ body{
     /* padding: 0 2rem; */
     font-weight: 400;
     font-size: 1.08rem;
+    color: #31343B;
 }
-
+.explore .name-profile a{
+    text-decoration: none;
+    color:#31343B ;
+}
+.explore .name-profile img{
+    border-radius: 50%;
+    width:25px ;
+    height: ;25px
+}
 .explore .feed a,
 .explore .explore-section a{
    text-decoration: none;
@@ -194,6 +204,7 @@ body{
    color: #1D2129; 
    font-weight: 400;
     font-size: 1rem;
+    margin-top: .5rem;
 }
 
 .explore .feed,
@@ -201,9 +212,49 @@ body{
     padding: 1.5rem 0;
 
 }
+.explore .explore-section > span{
+    font-weight: 600;
+    font-size:1.133rem ;
+    color: #626974;
+    margin-bottom:.3rem;
+}
 .explore img{
     width: 25px;
     height: 25px;
+}
+
+.explore-section .see-more{
+ color: #366CCC;
+ 
+}
+.explore-section a:hover:last-of-type{
+    text-decoration: underline #366CCC;
+} 
+
+.explore-section a:hover,
+.explore .feed  a:hover,
+.explore .shortcuts a:hover{
+    background-color: #fff;
+}
+.shortcuts .title .name{
+    font-weight: 600;
+    font-size:1.133rem ;
+    color: #626974;
+    margin-bottom: .5rem;
+    
+
+}
+.shortcuts .title .edit-hide{
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1rem ;
+    color: #0084ff;
+    display: none;
+    
+}
+
+.title:hover .edit-hide{
+    display: block;
 }
 
 
@@ -319,10 +370,12 @@ footer .copyright{
     position: fixed;
     width: 16%;
     right: 0;
-    overflow-y: auto;
     margin-top: 7.5vh;
     height:92.5vh ;
 
+}
+.conversations:hover{
+    overflow-y: auto;
 }
 
 .conversations  .contacts .contact{
