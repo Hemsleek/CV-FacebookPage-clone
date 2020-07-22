@@ -544,6 +544,66 @@ footer .copyright{
 .activities .activity:hover{
     background-color:#E4E6EB ;
 }
+.status{
+    margin-bottom: 2rem;
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+
+}
+.status .options{
+    height: 30%;
+
+}
+.status .friends-status{
+ width: 24%;
+ border-radius: 15px;
+ margin-right: .5rem;
+ background-color: #fff;
+ box-sizing: border-box;
+}
+
+.status .friends-status {
+    position: relative;
+}
+
+.friends-status img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: 100%;
+    border-radius: 15px;
+}
+.friend-profile-pix{
+    position: absolute;
+    top:1.4rem;
+    left: .8rem;
+    width: 36px;
+    height: 36px;
+    border: 4px #1876F2 solid;
+    border-radius: 50%;
+
+}
+.friend-profile-pix img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.friends-status > span{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    max-width: 70%;
+    color: #fff;
+    font-size: .94rem;
+    font-weight: 600;
+    line-height: 1.34;
+
+}
+
+
+
 .friends-post{
     grid-area: friends-post;
     display:flex;
