@@ -339,7 +339,7 @@ body{
 }
 .section-title a:hover:last-child{
     text-decoration: underline #3B5998;
-
+   
 }
 .sponsored-posts .post a{
     display: flex;
@@ -595,24 +595,51 @@ footer .copyright{
 .status{
     margin-bottom: 2rem;
     background-color: #fff;
-    height: fit-content;
+    /* height: fit-content; */
     width: 100%;
+    padding:.2rem  .8rem 1rem .8rem;
+
+
+
 
 }
 .status .options{
-    height: 30%;
+    height: 35px;
+    width: 100%;
+}
+.status .options a{
+    text-decoration: none;
+
+}
+.status .options a:first-child{
+    color:#616770 ;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+.status .options a:last-child{
+    color:  #3B5998 ;
+    font-size:0.92rem;
+    font-weight: 400;
+
+}
+
+.status .options a:hover:last-child{
+    text-decoration: underline #3B5998;
+
+}
+.status .options a:hover:first-child{
+    
+    text-decoration: underline #616770;
 
 }
 .status .friends-status{
- width: 24%;
+ width: 26%;
  border-radius: 15px;
  margin-right: .5rem;
  background-color: #fff;
  box-sizing: border-box;
-}
-
-.status .friends-status {
-    position: relative;
+ position: relative;
 }
 
 .friends-status img{
@@ -648,6 +675,10 @@ footer .copyright{
     font-weight: 600;
     line-height: 1.34;
 
+}
+.friends-status .add-story{
+    max-width:100% ;
+    left:.5rem;
 }
 
 
