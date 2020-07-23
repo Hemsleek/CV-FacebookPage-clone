@@ -287,7 +287,6 @@ body{
     background: #fff;
     padding: .6rem;
     padding-right:2.2rem;
-    /* color: ; */
     width:90%;
     cursor: pointer;
     
@@ -304,6 +303,55 @@ body{
     
 }
 
+.sponsored-posts{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color:  #616770;
+    width: 90%;
+    padding: 1rem;
+
+}
+.sponsored-posts .section-title{
+    margin-bottom:1rem;
+}
+.sponsored-posts img{
+    margin:1rem 0;
+}
+.sponsored-posts .post{
+    display: flex;
+    flex-direction: column;
+
+}
+.sponsored-posts .section-title a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.section-title a:last-child{
+    color: #3B5998;
+
+}
+.section-title a:first-child{
+    font-weight: 600;
+    color: #616770;
+    font-size: 1rem;
+
+}
+.section-title a:hover:last-child{
+    text-decoration: underline #3B5998;
+
+}
+.sponsored-posts .post a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3B5998;
+}
+.sponsored-posts .big-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 .sponsored-container .languages{
     background-color: #fff;
@@ -771,6 +819,3 @@ cursor: pointer;
     cursor: pointer;
 
 }
-
-
-
