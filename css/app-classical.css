@@ -281,7 +281,7 @@ body{
 
 .sponsored-container > div{
     margin-bottom: 1rem;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .sponsored-container .birthdays-notify{
     background: #fff;
@@ -532,13 +532,24 @@ footer .copyright{
 
 
 .moment-thought{
-    background-color: #FFFFFF;
+    background-color: #FFF;
     border-radius: 10px;
     margin:0 auto 1.2rem;
     color: #65676B;
     width: 100%;
     max-width: 100%
     
+}
+.moment-thought .create-top{
+    text-decoration:none;
+    color:#4b4f56 ;
+    font-size:.92rem;
+    font-weight:600 ;
+    height: 35px;
+    padding-left: 1rem;
+    background-color: #F5F6F7;
+    border: 1px solid #E5E5E5;
+
 }
 .moment-thought img{
     width: 24px; 
@@ -573,13 +584,12 @@ footer .copyright{
  font-size: 1.133rem;
  font-weight: 400;
  color: #65676B;
- background-color: #F0F2F5;
+ /* background-color: #F0F2F5; */
+ background-color: #FFF;
  cursor: pointer;
 
 }
-.my-post .post-input:hover{
-    background-color:#E4E6EB ;
-}
+
 .activities .activity{
     display: flex;
     align-items: center;
@@ -598,11 +608,8 @@ footer .copyright{
     /* height: fit-content; */
     width: 100%;
     padding:.2rem  .8rem 1rem .8rem;
-
-
-
-
 }
+
 .status .options{
     height: 35px;
     width: 100%;
@@ -684,15 +691,7 @@ footer .copyright{
     justify-content: center;
 
 }
-/* .create-story > span{
-    padding-bottom: 1rem;
-    max-width: 50%;
-    text-align: center;
-    color: #040404;
-    font-size: 1rem;
-    font-weight:600 ;
-    
-} */
+
 .create-plus span{
     position: relative;
     width:1.2rem ;
@@ -734,6 +733,10 @@ footer .copyright{
     align-items: center;
     width:100%;
     padding: 1.5rem 2rem;
+}
+.friends-post > div{
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 .friend-post{
     border-radius: 15px;
