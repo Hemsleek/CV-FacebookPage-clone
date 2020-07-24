@@ -634,7 +634,7 @@ footer .copyright{
 
 }
 .status .friends-status{
- width: 26%;
+ width: 24%;
  border-radius: 15px;
  margin-right: .5rem;
  background-color: #fff;
@@ -643,16 +643,21 @@ footer .copyright{
 }
 
 .friends-status img{
-    width: 100%;
-    /* height: 100%; */
+    width: 100%; 
     object-fit: cover;
     object-position: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
 }
-.friend-profile-pix{
+.friends-status .add-storyPix{
+    height: 100%;
+    object-position: center;
+    
+}
+ .friend-profile-pix{
     position: absolute;
-    top:1.4rem;
-    left: .8rem;
+    top:.8rem;
+    left: .4rem;
     width: 36px;
     height: 36px;
     border: 4px #1876F2 solid;
@@ -663,6 +668,45 @@ footer .copyright{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+
+} 
+.create-plus{
+    position: absolute;
+    top:.8rem;
+    left:.4rem;
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    /* border: 5px #fff solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* .create-story > span{
+    padding-bottom: 1rem;
+    max-width: 50%;
+    text-align: center;
+    color: #040404;
+    font-size: 1rem;
+    font-weight:600 ;
+    
+} */
+.create-plus span{
+    position: relative;
+    width:1.2rem ;
+    height:2px ;
+    background-color: #1876F2;
+
+}
+.create-plus span:before{
+    position: absolute;
+    content: "";
+    width:1.2rem ;
+    height: 2px;
+    background-color: #1876F2;
+    rotate: 90deg;
 
 }
 .friends-status > span{
@@ -850,3 +894,5 @@ cursor: pointer;
     cursor: pointer;
 
 }
+
+
