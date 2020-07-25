@@ -15,7 +15,7 @@ body{
     width: 100%;
     display: grid;
     grid-template: "navbar navbar navbar navbar" 7.5vh
-    "explore friends-post sponsored conversations" 1fr / 20% 37% 27% 16%;
+    "explore friends-post sponsored conversations" 1fr / 20% 39% 25% 16%;
     
     background: #E9EBEE;
 }
@@ -180,7 +180,7 @@ body{
     position: fixed;
     left: 2rem;
     /* height: 92.5vh; */
-    width:20%;
+    /* width:40; */
     margin-top: 7.5vh;
     /* padding: 0 2rem; */
     font-weight: 400;
@@ -276,6 +276,7 @@ body{
     color:#90949c;
     /* padding-left: .5rem; */
     
+    
 
 }
 
@@ -287,7 +288,7 @@ body{
     background: #fff;
     padding: .6rem;
     padding-right:2.2rem;
-    width:90%;
+    width:93%;
     cursor: pointer;
     
 }
@@ -308,7 +309,7 @@ body{
     flex-direction: column;
     background: #fff;
     color:  #616770;
-    width: 90%;
+    width: 93%;
     padding: 1rem;
 
 }
@@ -357,7 +358,7 @@ body{
     background-color: #fff;
     padding: .6rem 1rem;
     margin-bottom: 0;
-    width:90%;
+    width:93%;
 
 }
 
@@ -388,7 +389,7 @@ footer{
     bottom:0;
     width:24%;
     background-color: #F0F2F5; */
-    width:80%;
+    width:86%;
     padding: .8rem;
 }
 .footer a{
@@ -549,6 +550,7 @@ footer .copyright{
     padding-left: 1rem;
     background-color: #F5F6F7;
     border: 1px solid #E5E5E5;
+    
 
 }
 .moment-thought img{
@@ -565,7 +567,7 @@ footer .copyright{
     
 } 
 .moment-thought .activities{
-    padding: 1.3rem 2rem;
+    padding: 1.3rem .5rem;
 }
 
 .my-post img{
@@ -589,7 +591,6 @@ footer .copyright{
  cursor: pointer;
 
 }
-
 .activities .activity{
     display: flex;
     align-items: center;
@@ -598,6 +599,8 @@ footer .copyright{
     padding: .5rem .7rem;
     cursor: pointer;
     border-radius: 10px;
+    background-color: #F5F6F7;
+    margin-left:.6rem;
 }
 .activities .activity:hover{
     background-color:#E4E6EB ;
@@ -737,16 +740,21 @@ footer .copyright{
 .friends-post > div{
     border-radius: 5px;
     margin-bottom: 1rem;
+    border: 1px solid #E5E5E5;
 }
 .friend-post{
-    border-radius: 15px;
-    margin:0 auto 1.2rem;
+   
     background: #fff;
      width: 100%;  
-     max-width: 100%; 
+     
+    
 
 }
 
+.friends-post .title{
+    
+    padding: .8rem 1.2rem;
+    }
 
 .post-title .title-name .brand-logo{
     border-radius: 50%;
