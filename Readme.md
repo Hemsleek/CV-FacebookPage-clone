@@ -2,6 +2,8 @@
 Friendsbook is an implementation of  Facebook Landing Page,User logged In Page and Facebook Classical view Page.
 ## Getting started
 clone or download this repository ,run the `friendsbook.html` for Facebook landing page, `app.html` for User Logged In Page and `app-classical.html` for facebook classical view with favourite browser.
+## Preview
+[Demo](https://mb-fcc-portfolio.netlify.app/)
 ## Prerequisite
 Browser version must be recent for better experience.
 ## Features
